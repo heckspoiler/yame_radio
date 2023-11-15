@@ -28,23 +28,23 @@
 .listObject {
     list-style-type: none;
     position: relative;
-    transition: font-weight 0.2s ease-in-out, font-size 0.2s ease-in-out;
-    padding: 10px;
+    transition: font-weight 0.2s ease-in-out;
     height: auto;
     width: auto;
+    padding: 2px;
+    font-variation-settings: inherit;
 
 }
 
 .listObject:hover {
-    font-weight: 800;
-    font-size: 15px;
+    font-weight: 500;
 }
 
 .listObject::before {
     content: "";
     background-color: black;
     position: absolute;
-    height: 8px;
+    height: 6px;
     width: 0%;
 
     left: 0;
