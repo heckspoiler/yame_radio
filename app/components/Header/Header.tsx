@@ -4,7 +4,7 @@ import Logo from './Logo/Logo';
 import Navbar from './Navbar/Navbar';
 import HeaderMarquee from './Marquee/Marquee';
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.upperHeader}>
@@ -14,4 +14,6 @@ export default function Header() {
       <HeaderMarquee />
     </header>
   );
-}
+};
+
+export default Header;
