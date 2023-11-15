@@ -7,6 +7,14 @@ const bandeins = localFont({
   src: '../public/fonts/bandeins-strange-variable.ttf',
 });
 
+const clashLight = localFont({
+  src: '../public/fonts/ClashDisplay-Light.woff',
+});
+
+const clashSemibold = localFont({
+  src: '../public/fonts/ClashDisplay-Semibold.woff',
+});
+
 export const metadata: Metadata = {
   title: 'Yame Radio',
   description:

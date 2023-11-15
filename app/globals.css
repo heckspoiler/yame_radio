@@ -5,6 +5,21 @@
   --text-color: #464646
 }
 
+@font-face {
+  font-family: 'BandeinsStrange';
+  src: url('/fonts/bandeins-strange-variable.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Clash Light';
+  src: url('/fonts/ClashDisplay-Light.woff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Clash Semibold';
+  src: url('/fonts/ClashDisplay-Semibold.woff') format("woff");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
