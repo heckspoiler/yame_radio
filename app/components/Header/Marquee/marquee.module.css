@@ -1,14 +1,15 @@
 .marqueeContainer {
-    border: 1px solid black;
+    border: 1px solid #464646;
     display: flex;
     gap: 10vw;
     background-color: #464646;
     color: white;
     height: 100%;
+
 }
 
 .marqueeContainer p {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 
 .marqueeElement {
@@ -19,8 +20,8 @@
 }
 
 .reddot {
-    height: 8px;
-    width: 8px;
+    height: 6px;
+    width: 6px;
     background-color: #FF0000;
     border-radius: 50%;
     animation: reddotBlink 2s infinite;

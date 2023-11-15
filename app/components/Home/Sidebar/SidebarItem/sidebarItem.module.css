@@ -1,0 +1,17 @@
+.sidebarItem {
+    height: 100%;
+    background: none;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid #464646;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.sidebarItem:nth-of-type(1) {
+
+    border: 0;
+
+}

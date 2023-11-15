@@ -42,7 +42,7 @@
 
 .listObject::before {
     content: "";
-    background-color: black;
+    background-color: #464646;
     position: absolute;
     height: 12px;
     width: 0%;

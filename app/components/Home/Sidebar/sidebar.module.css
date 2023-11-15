@@ -1,0 +1,18 @@
+.sidebarContainer {
+
+    height: 65%;
+    position: absolute;
+    left: 0;
+    width: calc(6rem + 6vw);
+    background-color: transparent;
+}
+
+.sidebar {
+    border-right: 1px solid black;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+}

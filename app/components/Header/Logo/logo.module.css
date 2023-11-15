@@ -15,6 +15,15 @@
     animation: widthVariation 20s ease-in-out infinite
 }
 
+.logoContainer h1:hover {
+    letter-spacing: 5%;
+
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
 @keyframes widthVariation {
     0% {
         font-variation-settings: 'wdth' 350;
