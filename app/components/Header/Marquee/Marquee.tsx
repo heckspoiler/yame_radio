@@ -4,7 +4,7 @@ import styles from './marquee.module.css';
 
 export default function HeaderMarquee() {
   return (
-    <Marquee className={styles.marqueeContainer} pauseOnHover={true} speed={20}>
+    <Marquee className={styles.marqueeContainer} speed={20}>
       <div className={styles.marqueeElement}>
         <div className={styles.reddot}></div>
         <p>Yung Lean - Iceman</p>

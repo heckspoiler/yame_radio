@@ -1,6 +1,6 @@
 .header {
 
-    height: calc(4rem + 6vh);
+    height: calc(3rem + 6vh);
     display: flex;
     width: 100%;
     flex-direction: column;
