@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import Header from './components/Header/Header';
 import './globals.css';
 
 const bandeins = localFont({
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={bandeins.className}>{children}</body>
+      <body className={bandeins.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
