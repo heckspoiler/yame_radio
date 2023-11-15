@@ -2,7 +2,7 @@
 
   --light-grey: #F0F0F0;
   --dark-grey: #D2D2D2;
-
+  --text-color: #464646
 }
 
 * {
@@ -20,4 +20,14 @@ body {
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--light-grey)
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+span {
+  color: --text-color;
 }

@@ -1,6 +1,6 @@
 .header {
-    background-color: red;
-    height: calc(3rem + 6vh);
+
+    height: calc(4rem + 6vh);
     display: flex;
     width: 100%;
 }
@@ -8,5 +8,7 @@
 .upperHeader {
     height: 80%;
     width: 100%;
+    display: flex;
+    border: 1px solid #464646;
 
 }

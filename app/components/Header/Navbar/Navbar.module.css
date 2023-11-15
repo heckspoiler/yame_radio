@@ -1,0 +1,72 @@
+.navbar {
+    height: 100%;
+    width: 80%;
+    border-left: 1px solid #464646;
+}
+
+.list {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.Link {
+    text-decoration: none;
+    color: #464646;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listObject {
+    list-style-type: none;
+    position: relative;
+    transition: font-weight 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    padding: 10px;
+    height: auto;
+    width: auto;
+
+}
+
+.listObject:hover {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.listObject::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 8px;
+    width: 0%;
+
+    left: 0;
+
+    margin-top: 20px;
+    transition: width 0.2s ease-in-out;
+
+}
+
+.listObject:hover::before {
+    width: 100%;
+
+}
+
+
+.listObject:not(:hover)::before {
+    width: 0%;
+
+    right: 0;
+
+    left: auto;
+
+    transition: width 0.2s ease-in-out, right 0s linear 0.2s;
+
+}
