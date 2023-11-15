@@ -4,5 +4,47 @@
     gap: 10vw;
     background-color: #464646;
     color: white;
+    height: 100%;
+}
+
+.marqueeContainer p {
+    font-size: 0.7rem;
+}
+
+.marqueeElement {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.reddot {
+    height: 8px;
+    width: 8px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    animation: reddotBlink 2s infinite;
+}
+
+.marqueeSpan {
+    height: 2px;
+    width: 80px;
+    background-color: white;
+}
+
+@keyframes reddotBlink {
+
+    0%,
+    49%,
+    100% {
+        opacity: 1;
+    }
+
+    50%,
+    99% {
+        opacity: 0;
+    }
+
 
 }
