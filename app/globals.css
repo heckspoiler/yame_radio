@@ -20,6 +20,11 @@
   src: url('/fonts/ClashDisplay-Semibold.woff') format("woff");
 }
 
+@font-face {
+  font-family: 'Baumans';
+  src: url('/fonts/baumans.ttf') format("truetype");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

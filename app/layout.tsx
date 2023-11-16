@@ -15,6 +15,10 @@ const clashSemibold = localFont({
   src: '../public/fonts/ClashDisplay-Semibold.woff',
 });
 
+const baumans = localFont({
+  src: '../public/fonts/baumans-regular.ttf',
+});
+
 export const metadata: Metadata = {
   title: 'Yame Radio',
   description:

@@ -1,13 +1,13 @@
 import React from 'react';
 import Links from './Links/Links';
 import styles from './lowerSection.module.css';
-import AudioPlayer from './AudioPlayer/AudioPlayer';
+import AudioPlayerContainer from './AudioPlayerContainer/AudioPlayerContainer';
 
 const LowerSection: React.FC = () => {
   return (
     <div className={styles.lowerSection}>
       <Links />
-      <AudioPlayer />
+      <AudioPlayerContainer />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 .audioPlayerContainer {
     height: 100%;
     width: calc(100vw - (6rem + 8vw));
-    background-color: red;
+
 }

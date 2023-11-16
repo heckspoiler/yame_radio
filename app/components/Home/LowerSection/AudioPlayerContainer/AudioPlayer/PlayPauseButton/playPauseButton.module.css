@@ -1,0 +1,27 @@
+.buttonContainer {
+    border: none;
+    position: relative;
+    height: calc(2rem + 2vw);
+    width: calc(2rem + 2vw);
+
+}
+
+.buttonContainer:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.visible {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

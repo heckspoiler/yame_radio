@@ -5,4 +5,5 @@
     left: 0;
     height: 30%;
     display: flex;
+    background-color: var(--light-grey);
 }
