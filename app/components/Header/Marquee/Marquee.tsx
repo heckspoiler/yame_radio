@@ -2,7 +2,7 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';
 import styles from './marquee.module.css';
 
-export default function HeaderMarquee() {
+const HeaderMarquee: React.FC = () => {
   return (
     <Marquee className={styles.marqueeContainer} speed={20}>
       <div className={styles.marqueeElement}>
@@ -27,4 +27,6 @@ export default function HeaderMarquee() {
       </div>
     </Marquee>
   );
-}
+};
+
+export default HeaderMarquee;

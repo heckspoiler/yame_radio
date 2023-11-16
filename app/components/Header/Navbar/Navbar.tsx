@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './navbar.module.css';
 import Home from '@/app/page';
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.list}>
@@ -22,4 +22,6 @@ export default function Navbar() {
       </ul>
     </nav>
   );
-}
+};
+
+export default Navbar;

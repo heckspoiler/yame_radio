@@ -3,6 +3,8 @@
 import React from 'react';
 import styles from './audioPlayer.module.css';
 
-export default function AudioPlayer() {
-  return <div></div>;
-}
+const AudioPlayer: React.FC = () => {
+  return <audio></audio>;
+};
+
+export default AudioPlayer;

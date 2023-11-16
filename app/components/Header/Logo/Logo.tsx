@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './logo.module.css';
 import Link from 'next/link';
 
-export default function Logo() {
+const Logo: React.FC = () => {
   return (
     <div className={styles.logoContainer}>
       <Link href="/" className={styles.logoLink}>
@@ -10,4 +10,6 @@ export default function Logo() {
       </Link>
     </div>
   );
-}
+};
+
+export default Logo;
