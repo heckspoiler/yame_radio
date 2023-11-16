@@ -1,5 +1,5 @@
 .header {
-
+    position: absolute;
     height: calc(3rem + 6vh);
     display: flex;
     width: 100%;

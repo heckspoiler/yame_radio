@@ -1,3 +1,15 @@
 .main {
-  height: 87vh;
+  height: calc(100vh - (3rem + 6vh));
+  margin-top: calc(3rem + 6vh);
+  overflow-y: hidden;
+}
+
+.lowerSideContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+
+
 }

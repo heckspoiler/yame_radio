@@ -1,0 +1,7 @@
+.lowerSection {
+    width: 100vw;
+    border-top: 1px solid black;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+}
