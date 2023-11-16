@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import instagramIcon from './icons/instagram.svg';
 import patreonIcon from './icons/patreon.svg';
 import profileIcon from './icons/profile.svg';
@@ -24,14 +25,14 @@ export default function Links() {
           className={styles.image}
         />
       </a>
-      <a href="https://www.google.com" target="_blank">
+      <Link href="https://www.google.com" target="_blank">
         <Image
           priority
           src={profileIcon}
           alt="Follow us on Twitter"
-          className={styles.image}
+          className={`${styles.image} ${styles.profileIcon}`}
         />
-      </a>
+      </Link>
     </div>
   );
 }
