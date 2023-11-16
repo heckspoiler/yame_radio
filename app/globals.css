@@ -39,7 +39,8 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--light-grey)
+  background: rgb(154, 154, 154);
+  background-size: 100% 100%;
 }
 
 h1,
