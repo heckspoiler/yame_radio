@@ -6,8 +6,9 @@ type Props = {};
 
 export const ForwardButton = (props: Props) => {
   return (
-    <button>
+    <button className={styles.skipButton}>
       <Image
+        className={styles.skipButton}
         src="/public_icons/forwardbutton.svg"
         alt="play button"
         width={30}
@@ -19,13 +20,13 @@ export const ForwardButton = (props: Props) => {
 
 export const BackButton = (props: Props) => {
   return (
-    <button>
+    <button className={styles.skipButton}>
       <Image
         src="/public_icons/backbutton.svg"
         alt="play button"
         width={30}
         height={30}
-        className={styles.backButton}
+        className={`${styles.backButton}`}
       />
     </button>
   );

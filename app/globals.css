@@ -49,6 +49,4 @@ h3,
 p,
 a,
 ul,
-span {
-  color: var(--text-color);
-}
+span {}
