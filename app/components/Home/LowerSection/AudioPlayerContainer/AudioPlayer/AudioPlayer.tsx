@@ -4,6 +4,7 @@ import {
   ForwardButton,
   BackButton,
 } from './ForwardBackwardButton/ForwardBackwardButton';
+import { LikeButton } from './LikeButton/LikeButton';
 
 import styles from './audioPlayer.module.css';
 import { allSongs } from '../../../../../../songmockup';
@@ -17,6 +18,7 @@ const AudioPlayer = (props: Props) => {
         <BackButton />
         <PlayPauseButton />
         <ForwardButton />
+        <LikeButton />
       </div>
     </div>
   );
