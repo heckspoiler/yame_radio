@@ -8,9 +8,8 @@ export const ForwardButton = (props: Props) => {
   return (
     <button className={styles.skipButton}>
       <Image
-        className={styles.skipButton}
         src="/public_icons/forwardbutton.svg"
-        alt="play button"
+        alt="forward button"
         width={30}
         height={30}
       />
@@ -20,13 +19,12 @@ export const ForwardButton = (props: Props) => {
 
 export const BackButton = (props: Props) => {
   return (
-    <button className={styles.skipButton}>
+    <button className={`${styles.skipButton} ${styles.backButton}`}>
       <Image
         src="/public_icons/backbutton.svg"
-        alt="play button"
+        alt="back button"
         width={30}
         height={30}
-        className={`${styles.backButton}`}
       />
     </button>
   );
