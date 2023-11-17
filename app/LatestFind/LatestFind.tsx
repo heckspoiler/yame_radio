@@ -4,5 +4,5 @@ import styles from './latestFind.module.css';
 type Props = {};
 
 export const LatestFind = (props: Props) => {
-  return <div className={styles.latestFindsContainer}>LatestFind</div>;
+  return <div className={styles.latestFindsContainer}></div>;
 };

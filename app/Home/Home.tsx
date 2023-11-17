@@ -6,9 +6,11 @@ type Props = {};
 
 export const HomePage = (props: Props) => {
   return (
-    <div className={styles.lowerSideContainer}>
-      <Sidebar />
-      <LowerSection />
+    <div className={styles.homeContainer}>
+      <div className={styles.lowerSideContainer}>
+        <Sidebar />
+        <LowerSection />
+      </div>
     </div>
   );
 };

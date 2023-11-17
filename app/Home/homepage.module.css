@@ -1,5 +1,10 @@
+.homeContainer {
+    height: calc(100vh - (3rem + 6vh));
+    width: 100vw;
+}
+
 .lowerSideContainer {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 100%;

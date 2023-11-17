@@ -1,10 +1,11 @@
 .header {
-    position: absolute;
+    position: fixed;
     height: calc(3rem + 6vh);
     display: flex;
     width: 100%;
     flex-direction: column;
-    background: var(--light-grey)
+    background: var(--light-grey);
+    z-index: 10;
 }
 
 .upperHeader {
