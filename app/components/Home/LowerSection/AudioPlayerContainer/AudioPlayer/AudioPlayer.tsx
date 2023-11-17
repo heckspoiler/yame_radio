@@ -16,7 +16,10 @@ const AudioPlayer = (props: Props) => {
   return (
     <div className={styles.audioPlayer}>
       <div className={styles.playerVitals}>
-        <p className={styles.songInfo}>Yung Lean - Iceman</p>
+        <p className={styles.songInfo}>
+          Playing Now:{' '}
+          <span className={styles.trackName}>Yung Lean - Iceman</span>
+        </p>
         <div className={styles.progressAndTime}>
           <ProgressBar />
           <TimeStamp />
