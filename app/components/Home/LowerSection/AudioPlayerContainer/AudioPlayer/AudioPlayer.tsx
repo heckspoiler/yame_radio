@@ -14,16 +14,20 @@ type Props = {};
 
 const AudioPlayer = (props: Props) => {
   return (
-    <div>
-      <p>Yung Lean - Iceman</p>
-      <ProgressBar />
-      <div className={styles.buttonContainer}>
-        <BackButton />
-        <PlayPauseButton />
-        <ForwardButton />
-        <LikeButton />
+    <div className={styles.audioPlayer}>
+      <div className={styles.playerVitals}>
+        <p className={styles.songInfo}>Yung Lean - Iceman</p>
+        <div className={styles.progressAndTime}>
+          <ProgressBar />
+          <TimeStamp />
+        </div>
+        <div className={styles.buttonContainer}>
+          <BackButton />
+          <PlayPauseButton />
+          <ForwardButton />
+          <LikeButton />
+        </div>
       </div>
-      <TimeStamp />
     </div>
   );
 };

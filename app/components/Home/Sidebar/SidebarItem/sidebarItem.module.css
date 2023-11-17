@@ -4,6 +4,7 @@
     color: inherit;
     border: 0;
     border-top: 1px solid #464646;
+    border-right: 1px solid #464646;
     padding: 0;
     font: inherit;
     cursor: pointer;
@@ -20,8 +21,14 @@
     background-color: transparent;
     font-size: 1.1rem;
     height: 110%;
+    border-right: 0px;
 }
 
 .sidebarItem:nth-of-type(1) {
     border: 0;
+    border-right: 1px solid #464646;
+}
+
+.sidebarItem:nth-of-type(1):hover {
+    border-right: none;
 }
