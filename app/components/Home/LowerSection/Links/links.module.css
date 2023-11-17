@@ -6,10 +6,15 @@
     height: 100%;
     width: calc(6rem + 8vw);
     border-right: 1px solid black;
-    gap: 15px;
+    gap: 20px;
 }
 
 .image {
     height: calc(0.8rem + 1vw);
     width: calc(0.8rem + 1vw);
+    transition: scale easy-in-out 0.2s;
+}
+
+.image:hover {
+    scale: 1.1;
 }
