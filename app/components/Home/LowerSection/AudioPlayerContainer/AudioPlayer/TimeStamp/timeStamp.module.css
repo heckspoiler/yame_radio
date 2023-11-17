@@ -1,0 +1,12 @@
+.timeStamp {
+    border: 1px solid var(--text-color);
+    height: calc(4rem + 1vw);
+    width: calc(4rem + 1vw);
+    border-radius: 50%;
+    font-family: 'Baumans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}

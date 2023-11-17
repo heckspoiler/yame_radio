@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: 'Baumans';
-  src: url('/fonts/baumans.ttf') format("truetype");
+  src: url('/fonts/baumans-regular.ttf') format("truetype");
 }
 
 * {
