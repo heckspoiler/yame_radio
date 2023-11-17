@@ -3,3 +3,7 @@
     border: transparent 1px solid;
     outline: none;
 }
+
+.skipButton:hover {
+    cursor: pointer;
+}
