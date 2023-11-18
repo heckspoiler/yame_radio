@@ -1,0 +1,9 @@
+.newsContainer {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    margin-top: 100vh;
+    transition: margin-top 0.2s ease-in-out;
+}
