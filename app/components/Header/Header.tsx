@@ -6,7 +6,7 @@ import HeaderMarquee from './Marquee/Marquee';
 
 const Header: React.FC = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="header">
       <div className={styles.upperHeader}>
         <Logo />
         <Navbar />

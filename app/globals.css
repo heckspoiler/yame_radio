@@ -25,10 +25,22 @@
   src: url('/fonts/baumans-regular.ttf') format("truetype");
 }
 
+@-moz-document url-prefix() {
+
+  /* Your CSS rules here */
+  button {
+    background-color: transparent;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 html,

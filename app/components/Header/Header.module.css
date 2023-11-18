@@ -8,6 +8,10 @@
     z-index: 10;
 }
 
+.headerRed {
+    background-color: red !important;
+}
+
 .upperHeader {
     height: 80%;
     width: 100%;
