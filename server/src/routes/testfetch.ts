@@ -1,14 +1,30 @@
 import express from 'express';
 import axios from 'axios';
+import { supabase } from '../config/supabaseClient';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-const endpoint = process.env.ENDPOINT;
-const apiKey = process.env.PRIVATE_KEY;
-const router = express.Router();
+interface song {}
 
-export const testFunction = () => {
-  console.log(endpoint, apiKey);
-};
+interface testsongArray {
+  id: number;
+  created_at: string;
+  song: string;
+}
 
-const app = express();
+export async function fetchTestSongs() {
+  try {
+    let { data: testSongs, error } = await supabase
+      .from('testsongs')
+      .select('song');
+
+    if (error) throw error;
+    const testSongsJSON = JSON.stringify(testSongs);
+
+    // If you need to send this JSON string somewhere or use it as a JSON,
+    // you can do so here
+    console.log(testSongsJSON);
+  } catch (err) {
+    console.error(err);
+  }
+}

@@ -1,7 +1,7 @@
-const express = require('express');
+import { fetchTestSongs } from './routes/testfetch';
 
-import { testFunction } from './routes/testfetch';
+const express = require('express');
 
 const app = express();
 
-testFunction();
+fetchTestSongs();
