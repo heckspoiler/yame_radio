@@ -19,11 +19,7 @@ export async function fetchTestSongs() {
       .select('song');
 
     if (error) throw error;
-    const testSongsJSON = JSON.stringify(testSongs);
-
-    // If you need to send this JSON string somewhere or use it as a JSON,
-    // you can do so here
-    console.log(testSongsJSON);
+    console.log(testSongs);
   } catch (err) {
     console.error(err);
   }
