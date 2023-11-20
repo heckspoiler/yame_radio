@@ -1,19 +1,24 @@
-import { fetchTestSongs } from './routes/testfetch';
 const express = require('express');
 const dotenv = require('dotenv');
+const cors = require('cors');
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
-app.get('api/songs', async (req: any, res: any) => {
+app.use(cors());
+
+const { fetchTestSongs } = require('./routes/testfetch');
+
+app.get('/api/songs', async (req: any, res: any) => {
   try {
     const songs = await fetchTestSongs();
-    console.log(songs);
+    console.log('fetched Songs: ', songs);
+    res.json(songs);
   } catch (error: any) {
     res.status(500).send(error.message);
   }
 });
 
-app.listen(6000, () => console.log('Server is running'));
+app.listen(4000, () => console.log('Server is running'));
