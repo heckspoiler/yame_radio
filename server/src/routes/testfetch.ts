@@ -1,8 +1,4 @@
-import express from 'express';
-import axios from 'axios';
 import { supabase } from '../config/supabaseClient';
-import * as dotenv from 'dotenv';
-dotenv.config();
 
 interface song {}
 
@@ -18,9 +14,14 @@ export async function fetchTestSongs() {
       .from('testsongs')
       .select('song');
 
-    if (error) throw error;
+    if (error) {
+      throw error;
+    }
+
     console.log(testSongs);
+    return testSongs;
   } catch (err) {
-    console.error(err);
+    console.error('Error fetching test songs:', err);
+    throw err;
   }
 }
