@@ -12,8 +12,9 @@
     text-transform: uppercase;
     font-weight: 200;
     font-family: "Clash Light";
-    background-color: rgb(216, 218, 216);
+    background-color: var(--dark-grey);
     transition: height 0.2s ease-in-out, font-size 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    position: relative;
 }
 
 .sidebarItem:hover {
@@ -31,4 +32,40 @@
 
 .sidebarItem:nth-of-type(1):hover {
     border-right: none;
+}
+
+.sidebarItem::after {
+    font-family: "Clash Light";
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-grey);
+    height: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    text-transform: none;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 0;
+    z-index: 1;
+
+
+}
+
+.sidebarItem:hover::after {
+    content: attr(data-after-content);
+    font-weight: 100 !important;
+    border: 0.5px solid #464646;
+    height: 100%;
+    left: 100%;
+    font-size: 0.7rem;
+    opacity: 1;
+    transition: left 0.2s ease-in 0.2s, height 0.15s ease-in, font-size 0.2s ease-in 0.4s, opacity 0.1s ease-in;
 }

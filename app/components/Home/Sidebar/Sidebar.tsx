@@ -6,12 +6,48 @@ import SideBarItem from './SidebarItem/SideBarItem';
 import axios from 'axios';
 
 const radioStations = [
-  { id: 1, name: 'Fluffy' },
-  { id: 2, name: 'Quick' },
-  { id: 3, name: 'Core' },
-  { id: 4, name: 'Stone' },
-  { id: 5, name: 'Cloud' },
-  { id: 6, name: 'Pasta' },
+  {
+    id: 1,
+    name: 'Fluffy',
+    endpoint: 'fluffy',
+    afterContent:
+      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+  },
+  {
+    id: 2,
+    name: 'Quick',
+    endpoint: 'quick',
+    afterContent:
+      'Need for speed? Choose this station if you need that energy rush',
+  },
+  {
+    id: 3,
+    name: 'Core',
+    endpoint: 'core',
+    afterContent:
+      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+  },
+  {
+    id: 4,
+    name: 'Stone',
+    endpoint: 'stone',
+    afterContent:
+      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+  },
+  {
+    id: 5,
+    name: 'Cloud',
+    endpoint: 'cloud',
+    afterContent:
+      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+  },
+  {
+    id: 6,
+    name: 'Pasta',
+    endpoint: 'pasta',
+    afterContent:
+      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+  },
 ];
 
 const Sidebar: React.FC = () => {
@@ -36,6 +72,7 @@ const Sidebar: React.FC = () => {
             key={station.id}
             name={station.name}
             onClick={() => fetchStationData(station.name)}
+            afterContent={station.afterContent}
           />
         ))}
       </aside>
