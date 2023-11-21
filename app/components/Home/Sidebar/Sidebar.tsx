@@ -32,7 +32,7 @@ const radioStations = [
     name: 'Stone',
     endpoint: 'stone',
     afterContent:
-      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+      'A stone is cool and hard - enjoy our selection of Trap Songs',
   },
   {
     id: 5,
