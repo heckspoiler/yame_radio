@@ -10,8 +10,7 @@ const radioStations = [
     id: 1,
     name: 'Fluffy',
     endpoint: 'fluffy',
-    afterContent:
-      'Fluffy Radio gives you smooth tunes to start your day the right way.',
+    afterContent: 'Fluffy gives you smooth tunes to start your day right.',
   },
   {
     id: 2,
