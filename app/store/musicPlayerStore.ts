@@ -3,15 +3,18 @@ import { create } from 'zustand';
 interface MusicPlayerState {
   songTitle: string;
   artist: string;
+  duration: number;
   link: string;
-  length: number;
+  setSongTitle: (title: string) => void;
+  setArtist: (artist: string) => void;
 }
 
 const musicPlayerStore = create<MusicPlayerState>((set) => ({
-  songTitle: 'default',
-  artist: 'default',
-  link: 'default',
-  length: 0,
+  songTitle: 'Songname',
+  artist: 'Artist - ',
+  duration: 0,
+  link: '',
+  setSongTitle: (title) => set({ songTitle: title }),
+  setArtist: (artist) => set({ artist: artist }),
 }));
-
 export default musicPlayerStore;

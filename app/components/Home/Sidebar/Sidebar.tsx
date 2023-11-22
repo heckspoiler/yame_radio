@@ -4,8 +4,16 @@ import React, { useEffect, useState } from 'react';
 import styles from './sidebar.module.css';
 import SideBarItem from './SidebarItem/SideBarItem';
 import axios from 'axios';
+import musicPlayerStore from '@/app/store/musicPlayerStore';
 
-const radioStations = [
+interface RadioStation {
+  id: number;
+  name: string;
+  endpoint: string;
+  afterContent: string;
+}
+
+const radioStations: RadioStation[] = [
   {
     id: 1,
     name: 'Fluffy',
@@ -57,7 +65,9 @@ const Sidebar: React.FC = () => {
     try {
       const response = await axios.get(`http://localhost:4000/api/songs`);
       setStationData(response.data);
-      console.log(`Data for ${stationName}:`, response.data);
+      console.log(`Data for ${stationName}:`, response.data[0].song.title);
+      musicPlayerStore.getState().setSongTitle(response.data[0].song.title);
+      console.log('state: ', musicPlayerStore.getState().songTitle);
     } catch (error) {
       console.error(`Error fetching data for ${stationName}:`, error);
     }
@@ -70,6 +80,7 @@ const Sidebar: React.FC = () => {
           <SideBarItem
             key={station.id}
             name={station.name}
+            data-endpoint={station.endpoint}
             onClick={() => fetchStationData(station.name)}
             afterContent={station.afterContent}
           />
