@@ -67,14 +67,14 @@ const Sidebar: React.FC = () => {
     setCurrentStation(station);
     // setting Zustand state for radio station
     musicPlayerStore.getState().setRadioStation(station.name);
-
     try {
       const response = await axios.get(`http://localhost:4000/api/songs/`);
       setStationData(response.data);
-
+      console.log(response.data[0].song.length);
       //updating Zustand state
       musicPlayerStore.getState().setSongTitle(response.data[0].song.title);
       musicPlayerStore.getState().setArtist(response.data[0].song.artist);
+      musicPlayerStore.getState().setDuration(response.data[0].song.length);
     } catch (error) {
       console.error(`Error fetching data for ${station.name}:`, error);
     }
