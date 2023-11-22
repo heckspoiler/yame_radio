@@ -17,7 +17,8 @@
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.2",
     "react-h5-audio-player": "^3.9.0",
-    "vivus": "^0.4.6"
+    "vivus": "^0.4.6",
+    "zustand": "^4.4.6"
   },
   "devDependencies": {
     "@types/node": "^20",
