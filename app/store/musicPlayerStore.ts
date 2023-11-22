@@ -13,11 +13,11 @@ interface MusicPlayerState {
 
 const musicPlayerStore = create<MusicPlayerState>((set) => ({
   songTitle: '',
-  artist: 'nothing :( ',
+  artist: '',
   duration: 0,
   link: '',
-  radio: 'void',
-  setRadioStation: (radio) => ({ radio: radio }),
+  radio: '',
+  setRadioStation: (radio) => set({ radio: radio }),
   setSongTitle: (title) => set({ songTitle: title }),
   setArtist: (artist) => set({ artist: artist }),
 }));

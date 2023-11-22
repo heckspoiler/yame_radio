@@ -31,6 +31,7 @@
     color: var(--text-color);
     font-size: 0.6rem;
     text-transform: uppercase;
+    height: 0.6rem;
 }
 
 .trackName {

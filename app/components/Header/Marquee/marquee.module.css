@@ -1,23 +1,33 @@
 .marqueeContainer {
     border: 1px solid #464646;
     display: flex;
-    gap: 10vw;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     background-color: #464646;
     color: white;
     height: 100%;
+}
 
+.marqueeElementHidden {
+    visibility: hidden;
 }
 
 .marqueeContainer p {
     font-size: 0.5rem;
     text-transform: uppercase;
+
 }
 
 .marqueeElement {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
-    margin-right: 8vw;
+    width: 100%;
+    border-right: 1px solid white;
+    margin-right: 7vw;
+
 }
 
 .reddot {
@@ -28,9 +38,17 @@
     animation: reddotBlink 2s infinite;
 }
 
+.reddotHidden {
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
 .marqueeSpan {
     height: 1px;
-    width: 10vw;
+    width: 8vw;
     background-color: white;
 }
 

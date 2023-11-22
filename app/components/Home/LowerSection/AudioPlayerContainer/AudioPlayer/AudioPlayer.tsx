@@ -20,11 +20,16 @@ const AudioPlayer = (props: Props) => {
     <div className={styles.audioPlayer}>
       <div className={styles.playerVitals}>
         <p className={styles.songInfo}>
-          Playing Now:
-          <span
-            className={styles.trackName}
-          >{`${artistName} - ${songTitle}`}</span>
+          {artistName && songTitle ? (
+            <>
+              Playing Now:
+              <span className={styles.trackName}>
+                {`${artistName} - ${songTitle}`}
+              </span>
+            </>
+          ) : null}
         </p>
+
         <div className={styles.progressAndTime}>
           <ProgressBar />
           <TimeStamp />

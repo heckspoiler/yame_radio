@@ -12,27 +12,39 @@ const HeaderMarquee: React.FC = () => {
   const radioStation = musicPlayerStore((state) => state.radio); // zustand hook for updating radio station
   return (
     <Marquee className={styles.marqueeContainer} speed={20}>
-      <div className={styles.marqueeElement}>
-        <div className={styles.reddot}></div>
-        <p>
-          {artistName === 'nothing :( ' ? '' : `${artistName} - ${songTitle}`}
-        </p>
+      <div
+        className={
+          songTitle ? styles.marqueeElement : styles.marqueeElementHidden
+        }
+      >
+        <div className={artistName ? styles.reddot : styles.reddotHidden}></div>
+        <p>{!artistName ? '' : `${artistName} - ${songTitle}`}</p>
         <div className={styles.marqueeSpan}></div>
       </div>
-      <div className={styles.marqueeElement}>
-        <div className={styles.reddot}></div>
+      <div
+        className={
+          songTitle ? styles.marqueeElement : styles.marqueeElementHidden
+        }
+      >
+        <div className={artistName ? styles.reddot : styles.reddotHidden}></div>
         <p>{`${radioStation}`}</p>
         <div className={styles.marqueeSpan}></div>
       </div>
-      <div className={styles.marqueeElement}>
-        <div className={styles.reddot}></div>
-        <p>
-          {artistName === 'nothing :( ' ? '' : `${artistName} - ${songTitle}`}
-        </p>
+      <div
+        className={
+          songTitle ? styles.marqueeElement : styles.marqueeElementHidden
+        }
+      >
+        <div className={artistName ? styles.reddot : styles.reddotHidden}></div>
+        <p>{!artistName ? '' : `${artistName} - ${songTitle}`}</p>
         <div className={styles.marqueeSpan}></div>
       </div>
-      <div className={styles.marqueeElement}>
-        <div className={styles.reddot}></div>
+      <div
+        className={
+          songTitle ? styles.marqueeElement : styles.marqueeElementHidden
+        }
+      >
+        <div className={artistName ? styles.reddot : styles.reddotHidden}></div>
         <p>{`${radioStation}`}</p>
         <div className={styles.marqueeSpan}></div>
       </div>
