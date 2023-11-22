@@ -10,8 +10,8 @@ interface MusicPlayerState {
 }
 
 const musicPlayerStore = create<MusicPlayerState>((set) => ({
-  songTitle: 'Songname',
-  artist: 'Artist - ',
+  songTitle: '',
+  artist: 'nothing :( ',
   duration: 0,
   link: '',
   setSongTitle: (title) => set({ songTitle: title }),

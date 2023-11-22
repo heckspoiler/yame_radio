@@ -15,12 +15,15 @@ type Props = {};
 
 const AudioPlayer = (props: Props) => {
   const songTitle = musicPlayerStore((state) => state.songTitle); // zustand hook for updating song title
+  const artistName = musicPlayerStore((state) => state.artist); // zustand hook for updating artist name
   return (
     <div className={styles.audioPlayer}>
       <div className={styles.playerVitals}>
         <p className={styles.songInfo}>
-          Playing Now:{' '}
-          <span className={styles.trackName}>{`Yung Lean - ${songTitle}`}</span>
+          Playing Now:
+          <span
+            className={styles.trackName}
+          >{`${artistName} - ${songTitle}`}</span>
         </p>
         <div className={styles.progressAndTime}>
           <ProgressBar />

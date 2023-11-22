@@ -67,7 +67,7 @@ const Sidebar: React.FC = () => {
       setStationData(response.data);
       console.log(`Data for ${stationName}:`, response.data[0].song.title);
       musicPlayerStore.getState().setSongTitle(response.data[0].song.title);
-      console.log('state: ', musicPlayerStore.getState().songTitle);
+      musicPlayerStore.getState().setArtist(response.data[0].song.artist);
     } catch (error) {
       console.error(`Error fetching data for ${stationName}:`, error);
     }
